@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#header {
+  background-color: #4ea8de;
+  width: 100%;
+  height: 65vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin: 1.5em;
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  transition: 0.2s;
+  letter-spacing: 2px;
+}
+
+header ul li a:hover {
+  color: rgb(216, 216, 216);
+}
+
+header .material-icons {
+  display: none;
+}
+
+.headeractive {
+  color: #4ea8de;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3em;
+}
+
+.middle h1 {
+  color: white;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.middle p {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  text-indent: 1em;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+}
+
+.middle img {
+  width: 45%;
+}
+
+#penjelasan {
+  margin-top: 5em;
+}
+
+#penjelasan div {
+  display: flex;
+  align-items: center;
+  margin: 6em 4em;
+}
+
+#penjelasan h2 {
+  text-align: center;
+  font-size: 2.2em;
+  letter-spacing: 5px;
+}
+
+#penjelasan div:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+#penjelasan div img {
+  width: 25%;
+}
+
+.tulis {
+  margin: auto;
+  width: 60%;
+}
+
+.tulis h1 {
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin-bottom: 0.5em;
+}
+
+.tulis p {
+  font-size: 1.2em;
+  text-indent: 2em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+}
+
+.button {
+  text-align: center;
+}
+
+.button h3 {
+  letter-spacing: 2px;
+}
+
+.button ul {
+  margin: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  background-color: rgb(78, 168, 222);
+  color: white;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.button a:hover {
+  background-color: rgb(65, 141, 189);
+}
+
+#title {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+form {
+  text-align: center;
+  margin: 1em;
+}
+
+input[type="text"] {
+  width: 30%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 2px black;
+}
+
+input[type="submit"] {
+  background-color: rgb(78, 168, 222);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(65, 141, 189);
+}
+
+#shape {
+  margin: 2em auto;
+  background-color: #edf6f9;
+  width: 90%;
+  height: 30%;
+  border-radius: 0.5em;
+  padding: 2em;
+}
+
+#shape h2 {
+  letter-spacing: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 2em auto;
+  grid-gap: 2em;
+  text-align: center;
+}
+
+.grid h3 {
+  letter-spacing: 2px;
+}
+
+.grid p {
+  color: rgb(78, 168, 222);
+  font-weight: 600;
+}
+
+#shape .today {
+  color: rgb(64, 202, 110);
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 5em;
+  background-color: #1b4965;
+}
+
+.definition {
+  width: 50%;
+}
+
+.definition h2 {
+  color: #cae9ff;
+  letter-spacing: 2px;
+}
+
+.definition p {
+  color: #5fa8d3;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+.resource h2 {
+  color: #cae9ff;
+  letter-spacing: 2px;
+}
+
+.resource ul {
+  display: flex;
+  flex-direction: column;
+}
+.resource ul a {
+  color: #5fa8d3;
+  text-decoration: none;
+  list-style-type: none;
+  transition: 0.2s;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+.resource ul a:hover {
+  color: #cae9ff;
+}
+
+footer {
+  background-color: #4ea8de;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: white;
+  letter-spacing: 2px;
+  /* font-weight: 600; */
+}
+
+@media (max-width: 992px) {
+  .middle {
+    flex-direction: column-reverse;
+  }
+
+  .middle section {
+    margin-top: 1em;
+  }
+
+  .middle img {
+    width: 70%;
+  }
+
+  .middle h1,
+  .middle p {
+    text-align: center;
+  }
+
+  #penjelasan div,
+  #penjelasan div:nth-child(odd) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #penjelasan div img {
+    width: 50%;
+  }
+
+  .tulis {
+    width: 100%;
+    margin-top: 2em;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  header .material-icons {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+  }
+  header ul {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    height: 4em;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    justify-content: space-around;
+    border-radius: 0.5em 0.5em 0 0;
+    box-shadow: 0 0 0.5em black;
+  }
+
+  header ul li a {
+    color: black;
+  }
+
+  header ul li a:hover {
+    color: unset;
+  }
+
+  input[type="text"] {
+    width: 50%;
+  }
+
+  #footer {
+    flex-direction: column;
+    padding: 3em;
+  }
+  .definition,
+  .resource {
+    margin: 2em 0;
+  }
+
+  footer {
+    margin-bottom: 4em;
+  }
+
+  .definition {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .tulis {
+    font-size: 1em;
+  }
+
+  .button ul {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  input[type="text"] {
+    width: 70%;
+  }
+
+  .grid {
+    grid-template-columns: auto auto;
+  }
+
+  header .material-icons {
+    font-size: 1.5em;
+  }
+
+  header ul li a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 370px) {
+  #penjelasan h2 {
+    font-size: 1.5em;
+  }
+
+  #penjelasan div img {
+    width: 100%;
+  }
+
+  .tulis h1 {
+    font-size: 1.3em;
+  }
+
+  .tulis p {
+    font-size: 1em;
+  }
+
+  #title {
+    font-size: 1.5em;
+  }
+
+  header .material-icons {
+    font-size: 1.2em;
+  }
+
+  header ul li {
+    margin: 0 1px;
+  }
+
+  header ul li a {
+    font-size: 0.8em;
+  }
+}
